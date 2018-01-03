@@ -1,0 +1,18 @@
+#search{
+    margin-left: 30%;
+    width: 40%;
+    height: 30px;
+    font-size: 16pt;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom:30px;
+}
+#search::placeholder{
+    font-size: 16pt;
+}
+.gallery{
+    column-count: 4;
+}
+.gallery img{
+    margin-bottom: 50px;
+}
