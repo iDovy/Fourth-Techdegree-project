@@ -1,0 +1,1 @@
+$("img.01").colorbox({href: "photo_gallery_v3/photos/01.jpg", width: "80%",});
