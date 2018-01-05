@@ -17,6 +17,9 @@
  width: 100%;
  margin-bottom: 50px;
 }
+#cboxCurrent{
+    display: none !important;
+}
 @media (min-width: 768px)
 {
     .gallery{
