@@ -1,3 +1,23 @@
+function search() {
+    var input, filter, gal, i, gallery, title;
+    input = $("#search");
+    filter = input.value.toUpperCase();
+    gallery = $("#gallery")
+    gal = gallery.getElementsByTagName('img');
+
+    for (i = 0; i < 11; i++) {
+        title = $(gal).attr('title');
+        if (title.toUpperCase().indexOf(filter) > -1) {
+            gal[i].style.display = "";
+        } else {
+            gal[i].style.display = "none";
+        }
+    }
+}
+
+
+
+
 $("img.01").colorbox({
     href: "photo_gallery_v3/photos/01.jpg",
     width: "600px",
