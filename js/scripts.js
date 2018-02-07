@@ -1,12 +1,12 @@
 function search() {
     var input, filter, gal, i, gallery, title;
-    input = $("#search");
+    input = document.getElementById("search");
     filter = input.value.toUpperCase();
-    gallery = $("#gallery")
+    gallery = document.getElementsByClassName('gallery')[0];
     gal = gallery.getElementsByTagName('img');
 
-    for (i = 0; i < 11; i++) {
-        title = $(gal).attr('title');
+    for (i = 0; i < gal.length; i++) {
+        title = gal[i].getAttribute('alt');
         if (title.toUpperCase().indexOf(filter) > -1) {
             gal[i].style.display = "";
         } else {

@@ -20,10 +20,15 @@
 #cboxCurrent{
     display: none !important;
 }
-
+#colorbox{
+    width: 80% !important;
+}
 @media (min-width: 768px)
 {
     .gallery{
         column-count: 4;
+    }
+    #colorbox{
+        width: 600px !important;
     }
 }
